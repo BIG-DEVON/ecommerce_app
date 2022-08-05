@@ -1,9 +1,9 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/XsdmR2c/1.png",
+      img: "https://i.pinimg.com/564x/c8/17/68/c81768b5f325d64f9f8dbcd62feeabfc.jpg",
       title: "SUMMER SALE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS. ",
       bg: "f5fafd",
     },
     {
@@ -47,7 +47,7 @@ export const sliderItems = [
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img:"https://i.pinimg.com/564x/d3/cf/48/d3cf48b1090f0e5aba5983cbec4b037f.jpg",
     },
     {
       id:3,
@@ -67,7 +67,7 @@ export const sliderItems = [
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://i.pinimg.com/564x/f4/97/6e/f4976ed1e6358307d9ee35e6ef00a754.jpg",
     },
     {
       id:8,

@@ -88,9 +88,9 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>DEVON.</Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
+          There are many variations of items available in Stock, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don’t look even slightly believable.
         </Desc>

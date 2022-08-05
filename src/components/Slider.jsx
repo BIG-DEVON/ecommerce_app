@@ -30,6 +30,13 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
+   &:hover{
+    background-color:#002ead;
+    transition: 0.1s;
+    
+    width: 60px;
+    height: 60px;
+   }
 `;
 
 const Wrapper = styled.div`
