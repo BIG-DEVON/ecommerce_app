@@ -29,7 +29,7 @@ const verifyToken = (req,res,next)=> {
         if(req.user.isAdmin){
             next()
         }else{
-            res.status(403).json("Access Denied! , You aree ot allowed to do that")
+            res.status(403).json("Access Denied! , You are ot allowed to do that")
         }
     })
  };
