@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { popularProducts } from "../data";
 import Product from "./Product";
 
+
 const Container = styled.div`
     padding: 20px;
     display: flex;
@@ -45,13 +46,13 @@ const Products = (cat, filters, sort) => {
             [...prev].sort((a,b)=> a.createdAt - b.createdAt)
             );
         } else if ((  sort ==="asc")) {
-          setFilteredProducts(prev=> 
+          setFilteredProducts((prev)=> 
             [...prev].sort((a,b)=> a.price - b.price)
             );
           }
           else   {
-            setFilteredProducts(prev=> 
-              [...prev].sort((a,b)=> a.price - b.price)
+            setFilteredProducts((prev)=> 
+              [...prev].sort((a,b)=> b.price - a.price)
               );
             }
 
@@ -59,7 +60,9 @@ const Products = (cat, filters, sort) => {
 
   return (
     <Container>
-      {filteredProducts.map((item) => (
+      {cat ? filteredProducts.map((item) => (
+        <Product item={item} key={item.id} />
+      )) : products.slice(0,8).map((item) => (
         <Product item={item} key={item.id} />
       ))}
     </Container>

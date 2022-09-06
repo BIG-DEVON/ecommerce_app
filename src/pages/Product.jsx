@@ -5,6 +5,11 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import { mobile } from "../responsive";
+import { useLocation } from "react-router-dom";
+import {React ,useEffect, useState} from "react";
+import axios from "axios";
+import { publicRequest } from "../requestMethods";
+
 
 const Container = styled.div``;
 
@@ -116,6 +121,22 @@ const Button = styled.button`
 `;
 
 const Product = () => {
+  const location = useLocation();
+  const id = location.pathname.split("/")[2];
+  const [product, setProduct] = useState({});
+
+  useEffect(() => {
+    const getProducts = async  ()=>{
+      try {
+        const res = publicRequest.get("/product/find")
+      } catch (error) {
+        
+      }
+    }
+    
+  }, [id])
+  
+
   return (
     <Container>
       <Navbar />
