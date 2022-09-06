@@ -43,7 +43,7 @@ const Button = styled.button`
     font-weight: 600;
 `;
 
-const CategoryItem = ({ item }) => {
+const CategoryItem = ({item}) => {
   return (
     <Container>
       <Link to={`/products/${item.cat}`}> 

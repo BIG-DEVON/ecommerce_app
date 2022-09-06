@@ -18,7 +18,6 @@ const App = () => {
        <Route path="/products/:category" element={ <ProductList/> } />
        <Route path="/product/:id" element={ <Product/> } />
        <Route path="/cart" element={ <Cart/> } />
-
        <Route path="/login" 
         element=
         {  user ? ( <Navigate replace to="/" />
@@ -27,7 +26,6 @@ const App = () => {
           )
         }      
        />
-       
        
        <Route path="/register" 
        element= {user ? ( <Navigate replace to="/" />
